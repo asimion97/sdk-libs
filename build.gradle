@@ -10,8 +10,7 @@ plugins {
 group = 'xpu'
 
 def USER_HOME = "$System.env.HOME"
-def PROJECT_HOME = rootProject.file('./../../../')
-
+def PROJECT_HOME = rootProject.file('.')
 
 repositories {
     mavenLocal()
@@ -70,8 +69,8 @@ dependencies {
     implementation ('jakarta.json:jakarta.json-api:2.1.1');
 }
 
-sourceCompatibility = '18'
-targetCompatibility = '18'
+sourceCompatibility = '17'
+targetCompatibility = '17'
 
 scmVersion {
     repository {
