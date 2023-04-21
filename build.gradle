@@ -81,7 +81,7 @@ scmVersion {
     }
 
     tag { // doc: Version / Parsing
-        prefix = ''
+        prefix = 'v'
         versionSeparator = ''  // separator between prefix and version number, '' by default, empty String means no separator
     }
 
@@ -125,8 +125,8 @@ publishing {
     repositories {
         mavenLocal()
         maven {
-            name = "Github"
-            url = "'https://maven.pkg.github.com/arhacc/xpu-public/" 
+            name = "GitHubPackages"
+            url = uri("https://maven.pkg.github.com/arhacc/sdk-libs")
             credentials {
                 username = github_maven_user
                 password = github_maven_password
