@@ -41,7 +41,7 @@ dependencies {
     implementation 'com.microsoft.onnxruntime:onnxruntime:1.14.0'
     implementation 'com.microsoft.onnxruntime:onnxruntime_gpu:1.14.0'
 
-    implementation ('org.apache.lucene:lucene-core:9.5.0');
+    implementation ('org.apache.lucene:lucene-core:9.6.0');
     implementation ('org.apache.commons:commons-lang3:3.12.0');
     implementation ('org.apache.logging.log4j:log4j-core:2.20.0');
     implementation ('org.apache.commons:commons-configuration2:2.9.0');
@@ -67,6 +67,7 @@ dependencies {
     implementation ('org.fife.ui:rsyntaxtextarea:2.0.4.1');
     implementation ('org.glassfish:jakarta.json:2.0.1');
     implementation ('jakarta.json:jakarta.json-api:2.1.1');
+    implementation ('org.assertj:assertj-core:3.24.2');
 }
 
 sourceCompatibility = '17'
