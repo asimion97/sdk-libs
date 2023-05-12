@@ -68,10 +68,11 @@ dependencies {
     implementation ('org.glassfish:jakarta.json:2.0.1');
     implementation ('jakarta.json:jakarta.json-api:2.1.1');
     implementation ('org.assertj:assertj-core:3.24.2');
+    implementation ('com.fasterxml.jackson.core:jackson-databind:2.15.0');
 }
 
-sourceCompatibility = '17'
-targetCompatibility = '17'
+sourceCompatibility = '19'
+targetCompatibility = '19'
 
 scmVersion {
     repository {
