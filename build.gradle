@@ -10,7 +10,7 @@ plugins {
 group = 'xpu'
 
 def USER_HOME = "$System.env.HOME"
-def PROJECT_HOME = rootProject.file('.')
+def PROJECT_HOME = rootProject.file('.git')
 
 repositories {
     mavenLocal()
@@ -154,7 +154,9 @@ jar {
     exclude('META-INF/*.SF')
     exclude('META-INF/*.RSA')
     exclude('META-INF/*.DSA')
-
+     
+    def currentTag = scmVersion.tag.name
+    archiveName = "xpu-sdk-libs_${currentTag}.jar"
 //    dependsOn(release { classifier = null })
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     from {
